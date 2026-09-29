@@ -8,6 +8,8 @@ Conference on Robot Learning (CoRL), 2026
 
 [Project Page](https://drvla.github.io) | [Paper](https://drvla.github.io/drvla.pdf) | [arXiv](https://arxiv.org/abs/2603.19183)
 
+![SAE features of pi0.5 on a DROID episode (put the cup in the bowl): sub-task checkpoint, pinch grasp, open gripper and grasp/placement features activating over time](assets/teaser.gif)
+
 ---
 
 This repository contains the code to
