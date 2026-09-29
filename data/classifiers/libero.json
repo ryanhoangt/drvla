@@ -1,0 +1,21 @@
+{
+  "metrics": [
+    "episode_coverage",
+    "mean_onset_count",
+    "mean_activation_magnitude",
+    "relative_run_length"
+  ],
+  "coefficients": {
+    "episode_coverage": 1.8008561531775316,
+    "mean_onset_count": 1.885843111189703,
+    "mean_activation_magnitude": 0.5163864631015338,
+    "relative_run_length": -0.36114457437199005
+  },
+  "intercept": -4.203030788135699,
+  "n_labeled": 30,
+  "loo_accuracy": 1.0,
+  "description": "Paper classifier for LIBERO, fit on data/labels/libero_pg5.json",
+  "extra": {
+    "C": 1.0
+  }
+}

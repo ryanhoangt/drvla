@@ -1,0 +1,21 @@
+{
+  "metrics": [
+    "episode_coverage",
+    "mean_onset_count",
+    "mean_activation_magnitude",
+    "relative_run_length"
+  ],
+  "coefficients": {
+    "episode_coverage": 2.355886880603937,
+    "mean_onset_count": 0.7408633024775227,
+    "mean_activation_magnitude": 0.34865927968049737,
+    "relative_run_length": -1.0442685559531522
+  },
+  "intercept": -1.7824518867672887,
+  "n_labeled": 30,
+  "loo_accuracy": 0.9666666666666667,
+  "description": "Paper classifier for DROID, fit on data/labels/droid_pg5.json",
+  "extra": {
+    "C": 1.0
+  }
+}

@@ -1,0 +1,365 @@
+{
+  "description": "Manually labeled features of the pi05-DROID PaliGemma layer 5 SAE (expansion ratio 1, 2048 features) used to fit the DROID classifier in the paper (Appendix C.2-C.4). Metrics are computed over the 2,000-episode DROID subset.",
+  "labels": [
+    {
+      "sae": "pi05_droid ER1",
+      "layer": "paligemma.layer_5.output",
+      "feature_id": 107,
+      "label": "general",
+      "metrics": {
+        "episode_coverage": 0.9315,
+        "mean_onset_count": 1.795994,
+        "mean_activation_magnitude": 0.153026,
+        "relative_run_length": 0.250704
+      }
+    },
+    {
+      "sae": "pi05_droid ER1",
+      "layer": "paligemma.layer_5.output",
+      "feature_id": 158,
+      "label": "general",
+      "metrics": {
+        "episode_coverage": 0.954,
+        "mean_onset_count": 2.734947,
+        "mean_activation_magnitude": 0.207129,
+        "relative_run_length": 0.19829
+      }
+    },
+    {
+      "sae": "pi05_droid ER1",
+      "layer": "paligemma.layer_5.output",
+      "feature_id": 165,
+      "label": "general",
+      "metrics": {
+        "episode_coverage": 0.923,
+        "mean_onset_count": 1.930699,
+        "mean_activation_magnitude": 0.227123,
+        "relative_run_length": 0.315858
+      }
+    },
+    {
+      "sae": "pi05_droid ER1",
+      "layer": "paligemma.layer_5.output",
+      "feature_id": 399,
+      "label": "general",
+      "metrics": {
+        "episode_coverage": 0.8875,
+        "mean_onset_count": 1.77555,
+        "mean_activation_magnitude": 0.25792,
+        "relative_run_length": 0.381555
+      }
+    },
+    {
+      "sae": "pi05_droid ER1",
+      "layer": "paligemma.layer_5.output",
+      "feature_id": 478,
+      "label": "general",
+      "metrics": {
+        "episode_coverage": 0.8495,
+        "mean_onset_count": 1.809978,
+        "mean_activation_magnitude": 0.186891,
+        "relative_run_length": 0.336712
+      }
+    },
+    {
+      "sae": "pi05_droid ER1",
+      "layer": "paligemma.layer_5.output",
+      "feature_id": 480,
+      "label": "general",
+      "metrics": {
+        "episode_coverage": 0.9385,
+        "mean_onset_count": 1.385524,
+        "mean_activation_magnitude": 0.088372,
+        "relative_run_length": 0.169498
+      }
+    },
+    {
+      "sae": "pi05_droid ER1",
+      "layer": "paligemma.layer_5.output",
+      "feature_id": 809,
+      "label": "general",
+      "metrics": {
+        "episode_coverage": 0.924,
+        "mean_onset_count": 1.788104,
+        "mean_activation_magnitude": 0.152976,
+        "relative_run_length": 0.268064
+      }
+    },
+    {
+      "sae": "pi05_droid ER1",
+      "layer": "paligemma.layer_5.output",
+      "feature_id": 1128,
+      "label": "general",
+      "metrics": {
+        "episode_coverage": 0.9405,
+        "mean_onset_count": 2.174419,
+        "mean_activation_magnitude": 0.288519,
+        "relative_run_length": 0.292249
+      }
+    },
+    {
+      "sae": "pi05_droid ER1",
+      "layer": "paligemma.layer_5.output",
+      "feature_id": 1215,
+      "label": "general",
+      "metrics": {
+        "episode_coverage": 0.9005,
+        "mean_onset_count": 2.209896,
+        "mean_activation_magnitude": 0.142392,
+        "relative_run_length": 0.262208
+      }
+    },
+    {
+      "sae": "pi05_droid ER1",
+      "layer": "paligemma.layer_5.output",
+      "feature_id": 1297,
+      "label": "general",
+      "metrics": {
+        "episode_coverage": 0.9795,
+        "mean_onset_count": 1.75525,
+        "mean_activation_magnitude": 0.138836,
+        "relative_run_length": 0.173872
+      }
+    },
+    {
+      "sae": "pi05_droid ER1",
+      "layer": "paligemma.layer_5.output",
+      "feature_id": 1435,
+      "label": "general",
+      "metrics": {
+        "episode_coverage": 0.953,
+        "mean_onset_count": 1.724771,
+        "mean_activation_magnitude": 0.174965,
+        "relative_run_length": 0.309057
+      }
+    },
+    {
+      "sae": "pi05_droid ER1",
+      "layer": "paligemma.layer_5.output",
+      "feature_id": 1441,
+      "label": "general",
+      "metrics": {
+        "episode_coverage": 0.9125,
+        "mean_onset_count": 1.489617,
+        "mean_activation_magnitude": 0.143685,
+        "relative_run_length": 0.36437
+      }
+    },
+    {
+      "sae": "pi05_droid ER1",
+      "layer": "paligemma.layer_5.output",
+      "feature_id": 1594,
+      "label": "general",
+      "metrics": {
+        "episode_coverage": 0.903,
+        "mean_onset_count": 1.707746,
+        "mean_activation_magnitude": 0.187686,
+        "relative_run_length": 0.370545
+      }
+    },
+    {
+      "sae": "pi05_droid ER1",
+      "layer": "paligemma.layer_5.output",
+      "feature_id": 1795,
+      "label": "general",
+      "metrics": {
+        "episode_coverage": 0.941,
+        "mean_onset_count": 1.577885,
+        "mean_activation_magnitude": 0.134187,
+        "relative_run_length": 0.238496
+      }
+    },
+    {
+      "sae": "pi05_droid ER1",
+      "layer": "paligemma.layer_5.output",
+      "feature_id": 1800,
+      "label": "general",
+      "metrics": {
+        "episode_coverage": 0.9535,
+        "mean_onset_count": 2.061538,
+        "mean_activation_magnitude": 0.186022,
+        "relative_run_length": 0.28706
+      }
+    },
+    {
+      "sae": "pi05_droid ER1",
+      "layer": "paligemma.layer_5.output",
+      "feature_id": 143,
+      "label": "memorized",
+      "metrics": {
+        "episode_coverage": 0.0185,
+        "mean_onset_count": 1.0,
+        "mean_activation_magnitude": 0.063598,
+        "relative_run_length": 0.521505
+      }
+    },
+    {
+      "sae": "pi05_droid ER1",
+      "layer": "paligemma.layer_5.output",
+      "feature_id": 150,
+      "label": "memorized",
+      "metrics": {
+        "episode_coverage": 0.02,
+        "mean_onset_count": 1.0,
+        "mean_activation_magnitude": 0.032292,
+        "relative_run_length": 0.838188
+      }
+    },
+    {
+      "sae": "pi05_droid ER1",
+      "layer": "paligemma.layer_5.output",
+      "feature_id": 164,
+      "label": "memorized",
+      "metrics": {
+        "episode_coverage": 0.08,
+        "mean_onset_count": 1.0,
+        "mean_activation_magnitude": 0.040064,
+        "relative_run_length": 0.888332
+      }
+    },
+    {
+      "sae": "pi05_droid ER1",
+      "layer": "paligemma.layer_5.output",
+      "feature_id": 249,
+      "label": "memorized",
+      "metrics": {
+        "episode_coverage": 0.015,
+        "mean_onset_count": 1.0,
+        "mean_activation_magnitude": 0.043536,
+        "relative_run_length": 1.0
+      }
+    },
+    {
+      "sae": "pi05_droid ER1",
+      "layer": "paligemma.layer_5.output",
+      "feature_id": 276,
+      "label": "memorized",
+      "metrics": {
+        "episode_coverage": 0.0095,
+        "mean_onset_count": 1.0,
+        "mean_activation_magnitude": 0.06545,
+        "relative_run_length": 1.0
+      }
+    },
+    {
+      "sae": "pi05_droid ER1",
+      "layer": "paligemma.layer_5.output",
+      "feature_id": 327,
+      "label": "memorized",
+      "metrics": {
+        "episode_coverage": 0.0225,
+        "mean_onset_count": 1.0,
+        "mean_activation_magnitude": 0.044066,
+        "relative_run_length": 1.0
+      }
+    },
+    {
+      "sae": "pi05_droid ER1",
+      "layer": "paligemma.layer_5.output",
+      "feature_id": 407,
+      "label": "memorized",
+      "metrics": {
+        "episode_coverage": 0.0325,
+        "mean_onset_count": 3.2,
+        "mean_activation_magnitude": 0.042088,
+        "relative_run_length": 0.282879
+      }
+    },
+    {
+      "sae": "pi05_droid ER1",
+      "layer": "paligemma.layer_5.output",
+      "feature_id": 411,
+      "label": "memorized",
+      "metrics": {
+        "episode_coverage": 0.0205,
+        "mean_onset_count": 1.0,
+        "mean_activation_magnitude": 0.033422,
+        "relative_run_length": 1.0
+      }
+    },
+    {
+      "sae": "pi05_droid ER1",
+      "layer": "paligemma.layer_5.output",
+      "feature_id": 672,
+      "label": "memorized",
+      "metrics": {
+        "episode_coverage": 0.022,
+        "mean_onset_count": 1.0,
+        "mean_activation_magnitude": 0.039146,
+        "relative_run_length": 1.0
+      }
+    },
+    {
+      "sae": "pi05_droid ER1",
+      "layer": "paligemma.layer_5.output",
+      "feature_id": 1099,
+      "label": "memorized",
+      "metrics": {
+        "episode_coverage": 0.217,
+        "mean_onset_count": 1.0,
+        "mean_activation_magnitude": 0.034053,
+        "relative_run_length": 0.599648
+      }
+    },
+    {
+      "sae": "pi05_droid ER1",
+      "layer": "paligemma.layer_5.output",
+      "feature_id": 1113,
+      "label": "memorized",
+      "metrics": {
+        "episode_coverage": 0.0505,
+        "mean_onset_count": 1.166667,
+        "mean_activation_magnitude": 0.039661,
+        "relative_run_length": 0.737579
+      }
+    },
+    {
+      "sae": "pi05_droid ER1",
+      "layer": "paligemma.layer_5.output",
+      "feature_id": 1212,
+      "label": "memorized",
+      "metrics": {
+        "episode_coverage": 0.0195,
+        "mean_onset_count": 1.333333,
+        "mean_activation_magnitude": 0.063485,
+        "relative_run_length": 0.512494
+      }
+    },
+    {
+      "sae": "pi05_droid ER1",
+      "layer": "paligemma.layer_5.output",
+      "feature_id": 1239,
+      "label": "memorized",
+      "metrics": {
+        "episode_coverage": 0.013,
+        "mean_onset_count": 1.0,
+        "mean_activation_magnitude": 0.046174,
+        "relative_run_length": 1.0
+      }
+    },
+    {
+      "sae": "pi05_droid ER1",
+      "layer": "paligemma.layer_5.output",
+      "feature_id": 1273,
+      "label": "memorized",
+      "metrics": {
+        "episode_coverage": 0.0125,
+        "mean_onset_count": 1.0,
+        "mean_activation_magnitude": 0.05748,
+        "relative_run_length": 0.753846
+      }
+    },
+    {
+      "sae": "pi05_droid ER1",
+      "layer": "paligemma.layer_5.output",
+      "feature_id": 1812,
+      "label": "memorized",
+      "metrics": {
+        "episode_coverage": 0.083,
+        "mean_onset_count": 1.0,
+        "mean_activation_magnitude": 0.039957,
+        "relative_run_length": 0.795221
+      }
+    }
+  ]
+}

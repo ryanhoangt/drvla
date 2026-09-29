@@ -1,0 +1,19 @@
+# Dashboard configuration. Copy to dashboard/config.toml and edit the paths.
+# Relative paths are resolved from this file's directory.
+
+# Labels and classifiers created in the dashboard are saved here.
+workspace = "../workspace"
+
+[[models]]
+name = "pi05-DROID"
+activations = "/path/to/activations/pi05_droid"   # scripts/collect_activations.py --out
+saes = "/path/to/saes/pi05_droid"                 # scripts/train_sae.py --out
+index = "/path/to/index/pi05_droid"               # scripts/build_index.py --out
+classifier = "../data/classifiers/droid.json"     # optional default classifier
+
+[[models]]
+name = "pi05-LIBERO"
+activations = "/path/to/activations/pi05_libero"
+saes = "/path/to/saes/pi05_libero"
+index = "/path/to/index/pi05_libero"
+classifier = "../data/classifiers/libero.json"

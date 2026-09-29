@@ -1,0 +1,365 @@
+{
+  "description": "Manually labeled features of the pi05-LIBERO PaliGemma layer 5 SAE (expansion ratio 1, 2048 features) used to fit the LIBERO classifier in the paper (Appendix C.2-C.4). Metrics are computed over the 1,693 LIBERO training episodes.",
+  "labels": [
+    {
+      "sae": "pi05_libero ER1",
+      "layer": "paligemma.layer_5.output",
+      "feature_id": 128,
+      "label": "general",
+      "metrics": {
+        "episode_coverage": 0.996456,
+        "mean_onset_count": 2.538649,
+        "mean_activation_magnitude": 0.348364,
+        "relative_run_length": 0.199761
+      }
+    },
+    {
+      "sae": "pi05_libero ER1",
+      "layer": "paligemma.layer_5.output",
+      "feature_id": 146,
+      "label": "general",
+      "metrics": {
+        "episode_coverage": 0.99114,
+        "mean_onset_count": 2.251726,
+        "mean_activation_magnitude": 0.256072,
+        "relative_run_length": 0.20036
+      }
+    },
+    {
+      "sae": "pi05_libero ER1",
+      "layer": "paligemma.layer_5.output",
+      "feature_id": 421,
+      "label": "general",
+      "metrics": {
+        "episode_coverage": 0.984052,
+        "mean_onset_count": 2.175082,
+        "mean_activation_magnitude": 0.239333,
+        "relative_run_length": 0.20663
+      }
+    },
+    {
+      "sae": "pi05_libero ER1",
+      "layer": "paligemma.layer_5.output",
+      "feature_id": 445,
+      "label": "general",
+      "metrics": {
+        "episode_coverage": 0.994684,
+        "mean_onset_count": 1.450918,
+        "mean_activation_magnitude": 0.156876,
+        "relative_run_length": 0.218113
+      }
+    },
+    {
+      "sae": "pi05_libero ER1",
+      "layer": "paligemma.layer_5.output",
+      "feature_id": 543,
+      "label": "general",
+      "metrics": {
+        "episode_coverage": 0.975783,
+        "mean_onset_count": 2.195431,
+        "mean_activation_magnitude": 0.333842,
+        "relative_run_length": 0.224274
+      }
+    },
+    {
+      "sae": "pi05_libero ER1",
+      "layer": "paligemma.layer_5.output",
+      "feature_id": 589,
+      "label": "general",
+      "metrics": {
+        "episode_coverage": 0.979917,
+        "mean_onset_count": 2.248584,
+        "mean_activation_magnitude": 0.316619,
+        "relative_run_length": 0.237057
+      }
+    },
+    {
+      "sae": "pi05_libero ER1",
+      "layer": "paligemma.layer_5.output",
+      "feature_id": 753,
+      "label": "general",
+      "metrics": {
+        "episode_coverage": 0.992912,
+        "mean_onset_count": 2.472381,
+        "mean_activation_magnitude": 0.255102,
+        "relative_run_length": 0.174742
+      }
+    },
+    {
+      "sae": "pi05_libero ER1",
+      "layer": "paligemma.layer_5.output",
+      "feature_id": 1121,
+      "label": "general",
+      "metrics": {
+        "episode_coverage": 0.941524,
+        "mean_onset_count": 1.921597,
+        "mean_activation_magnitude": 0.245798,
+        "relative_run_length": 0.260773
+      }
+    },
+    {
+      "sae": "pi05_libero ER1",
+      "layer": "paligemma.layer_5.output",
+      "feature_id": 1129,
+      "label": "general",
+      "metrics": {
+        "episode_coverage": 0.999409,
+        "mean_onset_count": 2.398577,
+        "mean_activation_magnitude": 0.421745,
+        "relative_run_length": 0.181999
+      }
+    },
+    {
+      "sae": "pi05_libero ER1",
+      "layer": "paligemma.layer_5.output",
+      "feature_id": 1332,
+      "label": "general",
+      "metrics": {
+        "episode_coverage": 0.942115,
+        "mean_onset_count": 2.204196,
+        "mean_activation_magnitude": 0.243791,
+        "relative_run_length": 0.205843
+      }
+    },
+    {
+      "sae": "pi05_libero ER1",
+      "layer": "paligemma.layer_5.output",
+      "feature_id": 1550,
+      "label": "general",
+      "metrics": {
+        "episode_coverage": 0.988777,
+        "mean_onset_count": 2.475254,
+        "mean_activation_magnitude": 0.29218,
+        "relative_run_length": 0.178575
+      }
+    },
+    {
+      "sae": "pi05_libero ER1",
+      "layer": "paligemma.layer_5.output",
+      "feature_id": 1581,
+      "label": "general",
+      "metrics": {
+        "episode_coverage": 0.995275,
+        "mean_onset_count": 1.726098,
+        "mean_activation_magnitude": 0.22166,
+        "relative_run_length": 0.244245
+      }
+    },
+    {
+      "sae": "pi05_libero ER1",
+      "layer": "paligemma.layer_5.output",
+      "feature_id": 1645,
+      "label": "general",
+      "metrics": {
+        "episode_coverage": 0.956881,
+        "mean_onset_count": 2.232759,
+        "mean_activation_magnitude": 0.270882,
+        "relative_run_length": 0.23574
+      }
+    },
+    {
+      "sae": "pi05_libero ER1",
+      "layer": "paligemma.layer_5.output",
+      "feature_id": 1902,
+      "label": "general",
+      "metrics": {
+        "episode_coverage": 0.995865,
+        "mean_onset_count": 2.344952,
+        "mean_activation_magnitude": 0.363095,
+        "relative_run_length": 0.216716
+      }
+    },
+    {
+      "sae": "pi05_libero ER1",
+      "layer": "paligemma.layer_5.output",
+      "feature_id": 2033,
+      "label": "general",
+      "metrics": {
+        "episode_coverage": 0.985824,
+        "mean_onset_count": 2.133333,
+        "mean_activation_magnitude": 0.266489,
+        "relative_run_length": 0.225035
+      }
+    },
+    {
+      "sae": "pi05_libero ER1",
+      "layer": "paligemma.layer_5.output",
+      "feature_id": 184,
+      "label": "memorized",
+      "metrics": {
+        "episode_coverage": 0.114589,
+        "mean_onset_count": 1.0,
+        "mean_activation_magnitude": 0.040513,
+        "relative_run_length": 0.453976
+      }
+    },
+    {
+      "sae": "pi05_libero ER1",
+      "layer": "paligemma.layer_5.output",
+      "feature_id": 460,
+      "label": "memorized",
+      "metrics": {
+        "episode_coverage": 0.329592,
+        "mean_onset_count": 1.0,
+        "mean_activation_magnitude": 0.042136,
+        "relative_run_length": 0.957165
+      }
+    },
+    {
+      "sae": "pi05_libero ER1",
+      "layer": "paligemma.layer_5.output",
+      "feature_id": 480,
+      "label": "memorized",
+      "metrics": {
+        "episode_coverage": 0.165978,
+        "mean_onset_count": 1.333333,
+        "mean_activation_magnitude": 0.047968,
+        "relative_run_length": 0.299772
+      }
+    },
+    {
+      "sae": "pi05_libero ER1",
+      "layer": "paligemma.layer_5.output",
+      "feature_id": 556,
+      "label": "memorized",
+      "metrics": {
+        "episode_coverage": 0.210868,
+        "mean_onset_count": 1.166667,
+        "mean_activation_magnitude": 0.04747,
+        "relative_run_length": 0.296147
+      }
+    },
+    {
+      "sae": "pi05_libero ER1",
+      "layer": "paligemma.layer_5.output",
+      "feature_id": 581,
+      "label": "memorized",
+      "metrics": {
+        "episode_coverage": 0.191967,
+        "mean_onset_count": 1.0,
+        "mean_activation_magnitude": 0.03751,
+        "relative_run_length": 0.490427
+      }
+    },
+    {
+      "sae": "pi05_libero ER1",
+      "layer": "paligemma.layer_5.output",
+      "feature_id": 730,
+      "label": "memorized",
+      "metrics": {
+        "episode_coverage": 0.122859,
+        "mean_onset_count": 1.62963,
+        "mean_activation_magnitude": 0.045819,
+        "relative_run_length": 0.149338
+      }
+    },
+    {
+      "sae": "pi05_libero ER1",
+      "layer": "paligemma.layer_5.output",
+      "feature_id": 967,
+      "label": "memorized",
+      "metrics": {
+        "episode_coverage": 0.242764,
+        "mean_onset_count": 1.166667,
+        "mean_activation_magnitude": 0.035496,
+        "relative_run_length": 0.151363
+      }
+    },
+    {
+      "sae": "pi05_libero ER1",
+      "layer": "paligemma.layer_5.output",
+      "feature_id": 1084,
+      "label": "memorized",
+      "metrics": {
+        "episode_coverage": 0.388659,
+        "mean_onset_count": 1.012195,
+        "mean_activation_magnitude": 0.044554,
+        "relative_run_length": 0.702256
+      }
+    },
+    {
+      "sae": "pi05_libero ER1",
+      "layer": "paligemma.layer_5.output",
+      "feature_id": 1177,
+      "label": "memorized",
+      "metrics": {
+        "episode_coverage": 0.430597,
+        "mean_onset_count": 1.034188,
+        "mean_activation_magnitude": 0.053164,
+        "relative_run_length": 0.61874
+      }
+    },
+    {
+      "sae": "pi05_libero ER1",
+      "layer": "paligemma.layer_5.output",
+      "feature_id": 1208,
+      "label": "memorized",
+      "metrics": {
+        "episode_coverage": 0.164206,
+        "mean_onset_count": 1.0,
+        "mean_activation_magnitude": 0.039657,
+        "relative_run_length": 0.174936
+      }
+    },
+    {
+      "sae": "pi05_libero ER1",
+      "layer": "paligemma.layer_5.output",
+      "feature_id": 1297,
+      "label": "memorized",
+      "metrics": {
+        "episode_coverage": 0.175428,
+        "mean_onset_count": 1.8,
+        "mean_activation_magnitude": 0.04208,
+        "relative_run_length": 0.160997
+      }
+    },
+    {
+      "sae": "pi05_libero ER1",
+      "layer": "paligemma.layer_5.output",
+      "feature_id": 1574,
+      "label": "memorized",
+      "metrics": {
+        "episode_coverage": 0.2658,
+        "mean_onset_count": 1.0,
+        "mean_activation_magnitude": 0.031597,
+        "relative_run_length": 0.39413
+      }
+    },
+    {
+      "sae": "pi05_libero ER1",
+      "layer": "paligemma.layer_5.output",
+      "feature_id": 1683,
+      "label": "memorized",
+      "metrics": {
+        "episode_coverage": 0.359716,
+        "mean_onset_count": 1.029412,
+        "mean_activation_magnitude": 0.044964,
+        "relative_run_length": 0.499902
+      }
+    },
+    {
+      "sae": "pi05_libero ER1",
+      "layer": "paligemma.layer_5.output",
+      "feature_id": 1742,
+      "label": "memorized",
+      "metrics": {
+        "episode_coverage": 0.38039,
+        "mean_onset_count": 1.109091,
+        "mean_activation_magnitude": 0.061613,
+        "relative_run_length": 0.468864
+      }
+    },
+    {
+      "sae": "pi05_libero ER1",
+      "layer": "paligemma.layer_5.output",
+      "feature_id": 1980,
+      "label": "memorized",
+      "metrics": {
+        "episode_coverage": 0.15948,
+        "mean_onset_count": 1.0,
+        "mean_activation_magnitude": 0.033946,
+        "relative_run_length": 0.461554
+      }
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+[project]
+name = "drvla"
+version = "0.1.0"
+description = "Sparse autoencoders for Vision-Language-Action models (Dr. VLA, CoRL 2026)"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=1.24",
+    "pandas>=2.0",
+    "pillow>=10.0",
+    "scikit-learn>=1.3",
+    "torch>=2.2",
+    "tqdm>=4.66",
+]
+
+[project.optional-dependencies]
+dashboard = [
+    "matplotlib>=3.8",
+    "plotly>=5.20",
+    "streamlit>=1.50",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["drvla"]
