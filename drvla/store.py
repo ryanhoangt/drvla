@@ -14,6 +14,7 @@ into the same directory at once.
 
 import io
 import json
+import os
 from pathlib import Path
 
 import numpy as np
@@ -136,7 +137,8 @@ class ActivationWriter:
                     f"  new:      {collection}\nUse a new output directory."
                 )
         else:
-            tmp = collection_path.with_suffix(".tmp")
+            # One temporary file per process: shards started together all reach this branch.
+            tmp = collection_path.with_suffix(f".{os.getpid()}.tmp")
             tmp.write_text(json.dumps(collection, indent=2))
             tmp.replace(collection_path)
         for sub in ["episodes", "frames", *self.layers]:
