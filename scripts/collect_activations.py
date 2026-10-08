@@ -52,6 +52,12 @@ def parse_args():
     parser.add_argument("--batch-size", type=int, default=16, help="Timesteps per forward pass.")
     parser.add_argument("--num-denoising-steps", type=int, default=10)
     parser.add_argument("--seed", type=int, default=0, help="Seed for the flow-matching noise.")
+    parser.add_argument(
+        "--openpi-server-inputs",
+        action="store_true",
+        help="Feed the model what openpi's pi05_libero policy server feeds it: no discretized state in the "
+        "prompt and a black image in the masked right-wrist slot.",
+    )
     parser.add_argument("--device", default="cuda")
     frames = parser.add_mutually_exclusive_group()
     frames.add_argument("--no-frames", action="store_true", help="Do not store camera frames.")
@@ -85,6 +91,8 @@ def main():
         "num_denoising_steps": args.num_denoising_steps,
         "seed": args.seed,
     }
+    if args.openpi_server_inputs:
+        collection["inputs"] = "openpi policy server (no state in prompt, black masked image)"
     writer = ActivationWriter(args.out, collection, frame_max_side=args.frame_size)
     need_activations, need_frames = not args.frames_only, not args.no_frames
     todo = [e for e in episode_ids if not writer.is_done(e, need_activations, need_frames)]
@@ -99,6 +107,8 @@ def main():
         extractor = Pi05ActivationExtractor(
             args.checkpoint, asset_id, args.layers, device=args.device,
             num_denoising_steps=args.num_denoising_steps, seed=args.seed,
+            discrete_state_input=not args.openpi_server_inputs,
+            masked_image_value=-1.0 if args.openpi_server_inputs else 0.0,
         )
 
     start = time.time()

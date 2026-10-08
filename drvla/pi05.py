@@ -46,6 +46,10 @@ class Pi05ActivationExtractor:
         layers: Layer names from :mod:`drvla.layers`.
         num_denoising_steps: Flow-matching steps per forward pass.
         seed: Seeds the flow-matching noise, which the action-expert activations depend on.
+        discrete_state_input: Put the discretized state in the prompt. openpi's ``pi05_libero``
+            config sets this to False (its policy server sends only the task), ``pi05_droid`` to True.
+        masked_image_value: Pixel value (in [-1, 1]) of the masked right-wrist slot. Its 256 tokens
+            are part of the mean, so this matters; openpi's policy server sends a black image (-1).
     """
 
     def __init__(
@@ -56,6 +60,8 @@ class Pi05ActivationExtractor:
         device: str = "cuda",
         num_denoising_steps: int = 10,
         seed: int = 0,
+        discrete_state_input: bool = True,
+        masked_image_value: float = 0.0,
     ):
         import safetensors.torch
         from openpi.models import pi0_config
@@ -81,6 +87,8 @@ class Pi05ActivationExtractor:
         self.device = device
         self.num_denoising_steps = num_denoising_steps
         self.generator = torch.Generator(device=device).manual_seed(seed)
+        self.discrete_state_input = discrete_state_input
+        self.masked_image_value = masked_image_value
 
         state_stats = normalize.load(checkpoint_dir / "assets" / asset_id)["state"]
         self.state_q01 = np.asarray(state_stats.q01)
@@ -146,13 +154,18 @@ class Pi05ActivationExtractor:
 
         batch_size = len(images)
         base = self._image_batch(images)
-        tokens, masks = zip(*(self.tokenizer.tokenize(prompt, state=self._normalize_state(s)) for s in states))
+        tokens, masks = zip(
+            *(
+                self.tokenizer.tokenize(prompt, state=self._normalize_state(s) if self.discrete_state_input else None)
+                for s in states
+            )
+        )
         ones = torch.ones(batch_size, dtype=torch.bool, device=self.device)
         observation = _model.Observation(
             images={
                 "base_0_rgb": base,
                 "left_wrist_0_rgb": self._image_batch(wrist_images),
-                "right_wrist_0_rgb": torch.zeros_like(base),
+                "right_wrist_0_rgb": torch.full_like(base, self.masked_image_value),
             },
             image_masks={"base_0_rgb": ones, "left_wrist_0_rgb": ones, "right_wrist_0_rgb": ~ones},
             state=torch.as_tensor(states, dtype=torch.float32, device=self.device),
