@@ -55,7 +55,7 @@ cp -r ./src/openpi/models_pytorch/transformers_replace/* .venv/lib/python3.11/si
 uv pip install -e "/path/to/drvla[dashboard]"
 
 # only for DROID: TensorFlow Datasets to read the RLDS release
-uv pip install tensorflow-cpu==2.15.0 tensorflow-datasets==4.9.9
+uv pip install tensorflow-cpu==2.15.0 tensorflow-datasets==4.9.9 tensorflow-metadata==1.16.1
 ```
 
 ### Checkpoints
@@ -78,6 +78,9 @@ cp -r $JAX_CKPT/assets $CKPT/pi05_droid_pytorch/
   `gsutil -m cp -r gs://gresearch/robotics/droid/1.0.1 /data/droid/`.
   The paper uses the 2,000 episodes listed in `data/droid_2k_episodes.json`: 1,750 successful,
   250 failed, 567,088 timesteps.
+  To store only these (about 40 GB), stream the release once and keep the listed episodes:
+  `python scripts/subset_droid_rlds.py --out /data/droid_2k/droid/1.0.1`, then pass
+  `--droid-rlds-dir /data/droid_2k/droid/1.0.1` below. This needs TensorFlow (see Installation).
 
 ## Pipeline
 
